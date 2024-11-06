@@ -1,0 +1,16 @@
+<script>
+    window.onload=function(){
+    document.querySelector('input[type=password]').addEventListener('keyup', function (keyboardEvent) {
+      
+    const capsLockOn = keyboardEvent.getModifierState('CapsLock');
+    if (capsLockOn) {
+        alert("Keys are locked");
+    }
+});
+}
+</script>
+<form>
+    <input type="text" name="username">
+    <input type="password" name="pass">
+    <input type="submit" />
+</form>
